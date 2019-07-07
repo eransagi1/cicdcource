@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Get sources') {
       steps {
-        git(url: 'git@github.com:eransagi1/cicdcource.git', branch: 'master')
+        git(url: 'https://github.com/eransagi1/cicdcource.git', branch: 'master')
       }
     }
     stage('Install') {
