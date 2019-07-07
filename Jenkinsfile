@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        archiveArtifacts '*.zip'
+        archiveArtifacts(artifacts: '*.zip', allowEmptyArchive: true)
       }
     }
   }
