@@ -8,17 +8,17 @@ pipeline {
     }
     stage('Install') {
       steps {
-        sh 'npm install'
+        sh 'echo npm install'
       }
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        sh 'echo npm test'
       }
     }
     stage('Build') {
       steps {
-        sh 'npm run build'
+        sh 'echo npm run build'
       }
     }
     stage('Archive') {
