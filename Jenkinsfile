@@ -21,10 +21,5 @@ pipeline {
         sh 'echo npm run build'
       }
     }
-    stage('Archive') {
-      steps {
-        archiveArtifacts(artifacts: '*.zip', allowEmptyArchive: true)
-      }
-    }
   }
 }
